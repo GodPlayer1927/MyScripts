@@ -12,6 +12,7 @@ TextColor = Color3.fromRGB(255, 255, 255)
 
 local page = venyx:addPage("Main", 5012544693)
 local section1 = page:addSection("Afk Section")
+local section2 = page:addSection("Teleport Section")
 
 section1:addToggle("Auto Click", nil, function(value)
 game:GetService("RunService").RenderStepped:Connect(function()
@@ -53,6 +54,48 @@ section1:addKeybind("Open/Close gui", Enum.KeyCode.One, function()
 venyx:toggle()
 end, function()
 print("Changed Keybind")
+end)
+
+section2:addButton("Tp To all keys", function()
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.FirstKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.SecondKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.ThirdKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.FourthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.FifthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.SixthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.SeventhKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.EightKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.NinthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.TenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.EleventhKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.TwelfthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.ThirteenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.FourteenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.FifteenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.SixteenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.SeventeenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.EighteenthKey.CFrame
+wait(1.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Teleporters.Keys.NineteenthKey.CFrame
+wait(0.5)
 end)
 
 local theme = venyx:addPage("Theme", 5012544693)
